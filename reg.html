@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html style="background-image: url('10.jpg')">
+<head>
+	<title>Registration</title>
+	<style type="text/css">
+
+		html { 
+			  background: url(10.jpg) no-repeat center center fixed; 
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+		}
+		#container{
+
+			background-color: rgba(255,255,255,0.3);
+
+
+		}
+		#reg{
+
+			position: relative;
+			text-align: center;
+			font-size: 400%;
+			font-family: Purisa;
+			color: red;
+			height: 150px;	
+			padding-top: 20px;		
+		}
+
+		#customerDetail{
+
+			color: blue;
+			font-size: 150%;
+
+		}
+		#booking{
+			padding-top: 50px;
+			clear: both;
+			color: blue;
+			font-size: 150%;
+
+		}
+
+		#transport{
+
+			padding-top: 50px;
+			clear: both;
+			color: blue;
+			font-size: 150%;
+
+		}
+		#beautiful{
+
+			padding-top: 50px;
+			clear: both;
+			color: blue;
+			font-size: 150%;
+
+		}
+
+		#header{
+			height: 50px;
+			position: relative;
+			font-size: 160%;
+
+		}
+
+		#d1{
+			position: relative;
+			text-align: center;
+			width: 600px;
+			float: left;			
+		    top: 50px;
+			
+		}
+		#d2{
+			position: relative;
+			text-align:left;
+			width: 600px;
+			float: right;
+			top: 20px;
+		}
+		#bt{
+			padding-top: 100px;
+			height: 100px;
+
+		}
+		#l{
+			width: 500px;
+			position: relative;
+			float: left;
+			text-align: right;
+		}
+		#r{
+			width:500px;
+			position: relative;
+			float: right;
+			text-align: left;
+		}
+		#bt1 {
+		    background-color: green;    
+		    border-radius:20px;       
+		    font-size: 20px;    
+		    width: 150px;
+		    height: 50px;
+		    position: relative;	
+		    color: red;	    
+		      
+		}
+
+		
+	</style>
+</head>
+<form name="order" action="test.php" method="post"> 
+
+<body >
+<div id="container">
+<div id="reg">Register Now!</div>
+	<div id="customerDetail">
+		<div id="header"> Customer Detail:</div>
+		<div id="gName" style="height:100px"> 
+		     <div id="d1">Groom's Name:</div>
+		    <div id="d2"><input type="text" name="gName"></div>
+		</div>
+		<div id="bName" style="height:100px"> 
+		     <div id="d1">Bridal's Name:</div>
+		     <div id="d2"><input type="text" name="bName"></div>
+		</div>
+		<div id="date" style="height:100px"> 
+		     <div id="d1">Date:</div>
+		     <div id="d2"><input type="date" name="date"></div>
+		</div>
+		<div id="address" style="height:200px"> 
+		     <div id="d1">Address:</div>
+		     <div id="d2"><input type="text" name="address_1">
+                          <p><input type="text" name="address_2"></p>
+		                  <p><input type="text" name="address_3"></p></div>
+		</div>
+		<div id="tp"> 
+		     <div id="d1">Telephone Number:</div>
+		     <div id="d2"><input type="text" name="tp"></div>
+		</div>
+
+	</div>
+
+
+	<div id="booking">
+			<div id="header"> Booking Hotel:</div>
+			<div id="hotelName" style="height:100px"> 
+			    <div id="d1" > Hotel Name:</div>
+			     <div id="d2"><input type="text" name="hotelName"></div>
+			</div>
+			<div id="period" style="height:100px"> 
+			     <div id="d1">Booking Period:</div>
+			    <div id="d2">
+			    		<input type="time" name="to"> to 
+			    		<input type="time" name="from">
+			    </div>
+			</div>
+			<div id="colour" style="height:100px"> 
+			     <div id="d1">Theme colour of Reciption Hall:</div>
+			     <div id="d2"><input type="color" name="colour"></div>
+			</div>		
+
+	</div>
+
+
+
+
+
+	<div id="transport">
+			<div id="header"> Transport :</div>
+			<div id="trmethode" style="height:100px"> 
+			    <div id="d1" >Transport Package:</div>
+			     <div id="d2">
+			     	<select  name="transport" style="width:px">
+					<option value="cars">Cars</option>
+					<option value="horse">Hourse</option>
+					<option value="helicopter">Helicopter</option>
+					
+					</select>
+			     </div>
+			</div>
+			
+			
+
+	</div>
+
+
+
+
+
+	<div id="beautiful">
+			<div id="header"> Beauty parlour:</div>
+			<div id="saloon" style="height:100px"> 
+			    <div id="d1" >Saloon:</div>
+			     <div id="d2"><input type="text" name="saloon"></div>
+			     <div id="d1" >Address:</div>
+			     <div id="d2"><input type="text" name="address"></div>
+			</div>
+
+			<div id="pkg"  style="height:100px"> 
+			     <div id="header">Wedding Packages:</div>
+			     <div id="d2">
+			     	<select  name="pkg" style="width:px">
+					<option value="p1">DAY MONTH WEDDING COORDINATION </option>
+					<option value="p2">PREMIUM WEDDING PLANNING</option>
+					<option value="p3">FULL WEDDING PLANNING </option>
+					</select>
+			     </div>	     
+		    </div>	     
+		    </div>
+			
+	</div>
+
+	<div id="bt">
+		<div id="l"><input type="submit" id="bt1" value="Submit"></div>
+	    <div id="r"><input type="submit" id="bt1" value="view">	</div>
+
+	</div>
+	
+</div>
+</form>
+</body>
+</html>
